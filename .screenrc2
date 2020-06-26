@@ -1,0 +1,26 @@
+# ###########
+#
+# ###########
+escape ^Jj
+
+# ########
+#
+# ########
+hardstatus on
+hardstatus string "%w"
+hardstatus alwayslastline
+shelltitle '$ |bash'
+
+# #########
+# layout
+# ##########
+#
+# > rm -f $HOME/.screen_layout
+# > screen -X layout dump .screen_layout
+#
+# To make it auto-loading with layout saving:
+#
+# > echo source .screen_layout  >> $HOME/.screenrc
+# > echo layout save def >> $HOME/.screenrc
+source .screen_layout
+layout save def
