@@ -1,0 +1,24 @@
+# To check
+# ssh -vT git@github.com
+#
+
+Host github.com.dm
+  User git
+  HostName github.com
+  IdentityFile ~/.ssh/id_rsa_yyy
+#  IdentitiesOnly yes
+Host github.com.do
+  User git
+  HostName github.com
+  IdentityFile ~/.ssh/id_rsa_zzz
+#  UseKeychain yes
+Host bitbucket.com
+  AddKeysToAgent yes
+  HostName bitbucket.com
+  IdentityFile ~/.ssh/zzz
+Host git-codecommit.*.amazonaws.com
+  User xxx
+  IdentityFile ~/.ssh/yyy
+
+
+
